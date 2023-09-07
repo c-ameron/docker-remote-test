@@ -10,6 +10,6 @@ target "webapp" {
   dockerfile = "Dockerfile"
   tags = ["docker.io/username/webapp:${TAG}"]
     contexts = {
-        local = "."
+        local = BAKE_CMD_CONTEXT
     }
 }
