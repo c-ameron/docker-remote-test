@@ -18,6 +18,6 @@ target "webapp" {
   tags = ["docker.io/username/webapp:${TAG}"]
     contexts = {
         local = BAKE_CMD_CONTEXT
-        base = target:base
+        base = "target:base"
     }
 }
