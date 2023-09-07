@@ -1,2 +1,2 @@
 FROM ubuntu
-COPY bar /bar
+COPY --from=local bar /bar
