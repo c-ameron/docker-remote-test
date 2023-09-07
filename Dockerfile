@@ -1,2 +1,2 @@
 FROM ubuntu
-COPY foo /foo
+COPY --from=local foo /foo
